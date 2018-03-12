@@ -10,6 +10,7 @@ export default class Wallet extends Component {
     return (
       <BrowserRouter>
         <div>
+          <div style={{textAlign:'center'}}>我在写router前</div>
           <Switch>
             <Route exact path="/user" component={BindPhone}/>
           </Switch>

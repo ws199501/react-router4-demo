@@ -7,3 +7,4 @@ dist
 .idea
 jsconfig.json
 yarn.lock
+yarn-error.log
