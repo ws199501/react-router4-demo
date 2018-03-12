@@ -15,7 +15,7 @@ class Two extends Component {
   render() {
     return (
       <div>
-        ---->> Two
+        ----》 Two
       </div>
     )
   }

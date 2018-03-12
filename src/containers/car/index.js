@@ -24,7 +24,7 @@ class Car extends Component {
             <Link to="/two"> to="/two" </Link>
           </div>
           <Switch>
-            <Route path="/" component={One}/>
+            <Route path="/one" component={One}/>
             <Route path="/two" component={Two}/>
           </Switch>
         </div>
