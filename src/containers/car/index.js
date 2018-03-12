@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import {  Route, BrowserRouter, Switch, Link } from 'react-router-dom'
 
+import One from './one'
+import Two from './two'
 
 class Car extends Component {
   constructor(props) {
@@ -14,9 +17,18 @@ class Car extends Component {
 
   render() {
     return (
-      <div>
-        ----》CAR
-      </div>
+      <BrowserRouter basename="/car">
+        <div>
+          <div>
+            <Link to="one">to="one" </Link><br />
+            <Link to="/two"> to="/two" </Link>
+          </div>
+          <Switch>
+            <Route path="/" component={One}/>
+            <Route path="/two" component={Two}/>
+          </Switch>
+        </div>
+      </BrowserRouter>
     )
   }
 }
